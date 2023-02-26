@@ -1,0 +1,19 @@
+ALGORITHM FUNCTION is_palindrome(char : STRING[]) : STRING
+VAR
+    n := INTEGER;
+    answer_p : STRING := "This word is a palaindrome";
+    answer_n : STRING := "This word isn't palaindrome";
+BEGIN
+    IF (n = 0 or n =1) THEN
+        RETURN answer_p;
+
+    ELSE
+        IF (char[0] = char[-1]) THEN
+            delete char[0];
+            delete char[-1];
+            is_palindrome(char);
+        ELSE
+            RETURN answer_n;
+        END_IF
+    END_IF
+END
