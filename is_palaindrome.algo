@@ -4,7 +4,7 @@ VAR
     answer_p : STRING := "This word is a palaindrome";
     answer_n : STRING := "This word isn't palaindrome";
 BEGIN
-    IF (n = 0 or n =1) THEN
+    IF (n = 0 OR n =1) THEN
         RETURN answer_p;
 
     ELSE
